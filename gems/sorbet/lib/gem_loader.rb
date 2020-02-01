@@ -716,23 +716,11 @@ class Sorbet::Private::GemLoader
         Selenium::WebDriver::Chrome::Profile,
         Selenium::WebDriver::Chrome::Options,
         Selenium::WebDriver::Chrome::Service,
-        Selenium::WebDriver::DevTools,
         Selenium::WebDriver::Edge,
-        Selenium::WebDriver::EdgeHtml,
-        Selenium::WebDriver::EdgeHtml::Driver,
-        Selenium::WebDriver::EdgeHtml::Options,
-        Selenium::WebDriver::EdgeHtml::Service,
-        Selenium::WebDriver::EdgeChrome,
-        Selenium::WebDriver::EdgeChrome::Bridge,
-        Selenium::WebDriver::EdgeChrome::Driver,
-        Selenium::WebDriver::EdgeChrome::Profile,
-        Selenium::WebDriver::EdgeChrome::Options,
-        Selenium::WebDriver::EdgeChrome::Service,
         Selenium::WebDriver::Firefox,
         Selenium::WebDriver::Firefox::Extension,
         Selenium::WebDriver::Firefox::ProfilesIni,
         Selenium::WebDriver::Firefox::Profile,
-        Selenium::WebDriver::Firefox::Bridge,
         Selenium::WebDriver::Firefox::Driver,
         Selenium::WebDriver::Firefox::Options,
         Selenium::WebDriver::Firefox::Service,
@@ -744,9 +732,7 @@ class Sorbet::Private::GemLoader
         Selenium::WebDriver::Remote::Bridge,
         Selenium::WebDriver::Remote::Driver,
         Selenium::WebDriver::Remote::Response,
-        Selenium::WebDriver::Remote::ServerError,
         Selenium::WebDriver::Remote::Capabilities,
-        Selenium::WebDriver::Remote::COMMANDS,
         Selenium::WebDriver::Remote::Http::Common,
         Selenium::WebDriver::Remote::Http::Default,
         Selenium::WebDriver::Safari,
@@ -756,6 +742,9 @@ class Sorbet::Private::GemLoader
         Selenium::WebDriver::Safari::Service,
         Selenium::WebDriver::Support,
       ]
+    end,
+    'pundit-matchers' => proc do
+      my_require 'pundit/matchers'
     end,
   }
 
