@@ -694,6 +694,19 @@ class Sorbet::Private::GemLoader
         RSpec::Expectations::FailureAggregator,
       ]
     end,
+    'rspec-mocks' => proc do
+      my_require 'rspec/mocks'
+      [
+        RSpec::Mocks::AnyInstance,
+        RSpec::Mocks::ExpectChain,
+        RSpec::Mocks::StubChain,
+        RSpec::Mocks::MarshalExtension,
+        RSpec::Mocks::Matchers::HaveReceived,
+        RSpec::Mocks::Matchers::Receive,
+        RSpec::Mocks::Matchers::ReceiveMessageChain,
+        RSpec::Mocks::Matchers::ReceiveMessages,
+      ]
+    end,
     'selenium-webdriver' => proc do
       my_require 'selenium/webdriver'
       [
