@@ -641,7 +641,7 @@ class Sorbet::Private::GemLoader
         RDF::Query::HashPatternNormalizer,
         RDF::Vocabulary,
         RDF::StrictVocabulary,
-        RDF::Enumerator
+        RDF::Enumerator,
         RDF::Util::Aliasing,
         RDF::Util::Cache,
         RDF::Util::File,
