@@ -748,6 +748,9 @@ class Sorbet::Private::GemLoader
     'pundit-matchers' => proc do
       my_require 'pundit/matchers'
     end,
+    'rack-cors' => proc do
+      my_require 'rack/cors'
+    end,
   }
 
   # This is so that the autoloader doesn't treat these as manditory requires
