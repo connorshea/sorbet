@@ -601,6 +601,8 @@ class Sorbet::Private::GemLoader
     end,
     'rdf' => proc do
       my_require 'rdf'
+      my_require 'rdf/vocab'
+      my_require 'rdf/ntriples'
       [
         RDF::Countable,
         RDF::Durable,
