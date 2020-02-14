@@ -839,6 +839,8 @@ class Sorbet::Private::GemLoader
         ActiveRecord::Integration,
         ActiveRecord::Migration,
         ActiveRecord::Migration::Current,
+        ActiveRecord::Migration::CommandRecorder,
+        ActiveRecord::Migration::Compatibility,
         ActiveRecord::Migrator,
         ActiveRecord::ModelSchema,
         ActiveRecord::NestedAttributes,
