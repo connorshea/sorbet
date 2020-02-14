@@ -280,7 +280,6 @@ class Sorbet::Private::GemLoader
         Rack::Auth::Digest::Request,
         Rack::Session::Cookie,
         Rack::Session::Pool,
-        Rack::Session::Memcache,
         Rack::Handler::CGI,
         Rack::Handler::FastCGI,
         Rack::Handler::WEBrick,
