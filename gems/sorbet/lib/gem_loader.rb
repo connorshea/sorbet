@@ -569,6 +569,33 @@ class Sorbet::Private::GemLoader
     'activemodel' => proc do
       my_require 'active_model'
       my_require 'active_model/railtie'
+      [
+        ActiveModel::Attribute,
+        ActiveModel::Attributes,
+        ActiveModel::AttributeAssignment,
+        ActiveModel::AttributeMethods,
+        ActiveModel::BlockValidator,
+        ActiveModel::Callbacks,
+        ActiveModel::Conversion,
+        ActiveModel::Dirty,
+        ActiveModel::EachValidator,
+        ActiveModel::ForbiddenAttributesProtection,
+        ActiveModel::Lint,
+        ActiveModel::Model,
+        ActiveModel::Name,
+        ActiveModel::Naming,
+        ActiveModel::SecurePassword,
+        ActiveModel::Serialization,
+        ActiveModel::Translation,
+        ActiveModel::Type,
+        ActiveModel::Validations,
+        ActiveModel::Validator,
+        ActiveModel::Errors,
+        ActiveModel::RangeError,
+        ActiveModel::StrictValidationFailed,
+        ActiveModel::UnknownAttributeError,
+        ActiveModel::Serializers::JSON
+      ]
     end,
     'activesupport' => proc do
       my_require 'active_support'
