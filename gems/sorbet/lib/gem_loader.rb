@@ -114,6 +114,11 @@ class Sorbet::Private::GemLoader
       my_require 'puma/configuration'
       my_require 'puma/launcher'
       my_require 'puma/server'
+      [
+        Puma::Const,
+        Puma::Server,
+        Puma::Launcher
+      ]
     end,
     'term-ansicolor' => proc do
       my_require 'term/ansicolor'
