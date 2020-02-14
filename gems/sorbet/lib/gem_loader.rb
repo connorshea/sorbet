@@ -660,6 +660,13 @@ class Sorbet::Private::GemLoader
         ActionDispatch::Session::CookieStore,
         ActionDispatch::Session::MemCacheStore,
         ActionDispatch::Session::CacheStore,
+        ActionDispatch::Assertions,
+        ActionDispatch::Integration,
+        ActionDispatch::IntegrationTest,
+        ActionDispatch::TestProcess,
+        ActionDispatch::TestRequest,
+        ActionDispatch::TestResponse,
+        ActionDispatch::AssertionResponse,
       ]
     end,
     'actionview' => proc do
