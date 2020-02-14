@@ -564,6 +564,18 @@ class Sorbet::Private::GemLoader
       my_require 'active_job/railtie'
       [
         ActiveJob::Base,
+        ActiveJob::QueueAdapters,
+        ActiveJob::Serializers,
+        ActiveJob::Serializers::ObjectSerializer,
+        ActiveJob::Serializers::SymbolSerializer,
+        ActiveJob::Serializers::DurationSerializer,
+        ActiveJob::Serializers::DateTimeSerializer,
+        ActiveJob::Serializers::DateSerializer,
+        ActiveJob::Serializers::TimeWithZoneSerializer,
+        ActiveJob::Serializers::TimeSerializer,
+        ActiveJob::ConfiguredJob,
+        ActiveJob::TestCase,
+        ActiveJob::TestHelper,
       ]
     end,
     'activemodel' => proc do
