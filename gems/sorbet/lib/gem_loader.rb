@@ -692,6 +692,12 @@ class Sorbet::Private::GemLoader
     end,
     'sparql-client' => proc do
       my_require 'sparql/client'
+      [
+        SPARQL::Client::Query,
+        SPARQL::Client::Repository,
+        SPARQL::Client::Update,
+        SPARQL::Client::VERSION,
+      ]
     end,
     'selenium-webdriver' => proc do
       my_require 'selenium/webdriver'
