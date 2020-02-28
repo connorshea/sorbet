@@ -626,7 +626,6 @@ class Sorbet::Private::GemLoader
         ActionCable::Server::Connections,
         ActionCable::Server::Configuration,
         ActionCable::Server::Worker,
-        ActionCable::Server::ActiveRecordConnectionManagement,
         ActionCable::Connection,
         ActionCable::Connection::Authorization,
         ActionCable::Connection::Base,
